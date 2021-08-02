@@ -1,31 +1,62 @@
-# ELECTRONINFO
 <!DOCTYPE html>
 <html lang="fr">
-</html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+    <head>
+        <meta char set="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <title>Boutique</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">accueil</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../jeu/jeu.html">jeu</a></li>
 
-<body>
-  <!--pour créer des paragraphes-->
+                    <div class="logo"></div>
+                    <div id="shopping" class="shopping">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                </ul>
+                
+            </nav>
+        
+    <h1>Boutique</h1>
+    <div id="container"/>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">Productions</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
+    <form class="pure-form">
+        <fieldset class="pure-group">
+            <input type="text" class="pure-input-1-2" placeholder="Username" />
+            <input type="text" class="pure-input-1-2" placeholder="Password" />
+            <input type="email" class="pure-input-1-2" placeholder="Email" />
+        </fieldset>
+        <fieldset class="pure-group">
+            <input type="text" class="pure-input-1-2" placeholder="A title" />
+            <textarea class="pure-input-1-2" placeholder="Textareas work too"></textarea>
+        </fieldset>
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+    </form>
+</header>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.
+js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/
+materialize.min.js"></script>
+<script src="../jeu/index.js"></script>
 
-	<p>https://www.electron.info.com</p>
-  <p>Bienvenue sur mon sit web <a href="index.html">index</a></p>
-  <p>Son contenu est assez riche pour vos besoin <a href="pageweb3.html">sources</a></p>
-  <p>ceci est ma quatrieme <a href="pageweb4.html">page web4</a></p>
-	<p>cette page web contient un lien vers la <a href="page.html">page web de  wikipedia</a></p>
-  <!-- pour créer un partage de lien site web-->
-
-    <p>visitez le site de <a href="https://www.wikipedia.org"target="_blank">wikipedia</a></p>
-      <p>visitez le site <a href="https://www.youtube.com"target="_blank"> <mark>youtube</mark></a></p>
-   <P><a href="https://www.pierre-giraud.com/produit...">consultez mes produits pour vos achats</a></P>
-   <P><a href="https://www.electron.info.com/produit...">nos produits en ligne</a></P>
-
-	<script src="script.js">
-	</script>
-</body>
-
-</html>
+    </body>
+</html> 
