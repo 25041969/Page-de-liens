@@ -39,14 +39,16 @@ function newgame() {
 function rollDice() {
   const result = dice.roll();
   diceScore.innerHTML = result;
-  playerTurn.changeRoundScore(playerTurn.roundScore + result);
-
+   if{ playerTurn.changeRoundScore(playerTurn.roundScore + result);
+      result==1; 
+     }else{playerTurn.changeRoundScore(0<100);
+          }
   if (playerTurn.id == player1.id) {
     playerTurn = player2;
   } else {
     playerTurn = player1;
   }
-  playerTurn.changeRoundScore(0<100);
+  
 }
 
 function hold() {
