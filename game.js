@@ -40,7 +40,8 @@ function rollDice() {
   const result = dice.roll();
   diceScore.innerHTML = result;
    if{ playerTurn.changeRoundScore(playerTurn.roundScore + result);
-      result==1; 
+     if(result==1){ 
+       playerTurn.changeRoundScore(0);
      }else{playerTurn.changeRoundScore(0);
           }
   if (playerTurn.id == player1.id) {
