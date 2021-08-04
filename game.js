@@ -59,7 +59,7 @@ function hold() {
   } else {
     playerTurn = player1;
   }
-  playerTurn.changeRoundScore(0>100);
+  playerTurn.changeRoundScore(100);
 }
 
 initgame();
