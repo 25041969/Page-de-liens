@@ -39,19 +39,19 @@ function newgame() {
 function rollDice() {
   const result = dice.roll();
   diceScore.innerHTML = result;
-   if{ playerTurn.changeRoundScore(playerTurn.roundScore + result);
-     if(result==1){ 
-       playerTurn.changeRoundScore(0);
-     }else{playerTurn.changeRoundScore(0);
-          }
-  if (playerTurn.id == player1.id) {
+  
+  if(result==1){ 
+     playerTurn.changeRoundScore(0);
+   if (playerTurn.id == player1.id) {
     playerTurn = player2;
   } else {
     playerTurn = player1;
   }
-  
-}
-
+   else{ 
+      playerTurn.changeRoundScore(0>100);
+     playerTurn.changeRoundScore(playerTurn.roundScore + result);
+    }
+ }
 function hold() {
   playerTurn.changeGlobalScore(playerTurn.globalScore + playerTurn.roundScore);
   playerTurn.changeRoundScore(0);
@@ -59,8 +59,7 @@ function hold() {
     playerTurn = player2;
   } else {
     playerTurn = player1;
+     playerTurn.changeRoundScore(0>100);
   }
-  playerTurn.changeRoundScore(100);
-}
-
+   }
 initgame();
