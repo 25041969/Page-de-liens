@@ -41,7 +41,7 @@ function rollDice() {
   diceScore.innerHTML = result;
    if{ playerTurn.changeRoundScore(playerTurn.roundScore + result);
       result==1; 
-     }else{playerTurn.changeRoundScore(0<100);
+     }else{playerTurn.changeRoundScore(0);
           }
   if (playerTurn.id == player1.id) {
     playerTurn = player2;
@@ -53,13 +53,13 @@ function rollDice() {
 
 function hold() {
   playerTurn.changeGlobalScore(playerTurn.globalScore + playerTurn.roundScore);
-  playerTurn.changeRoundScore(0>100);
+  playerTurn.changeRoundScore(0);
   if (playerTurn.id == player1.id) {
     playerTurn = player2;
   } else {
     playerTurn = player1;
   }
-  playerTurn.changeRoundScore(0<100);
+  playerTurn.changeRoundScore(0>100);
 }
 
 initgame();
